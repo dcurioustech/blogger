@@ -1,9 +1,10 @@
-import os, sys
+import os
 import logging
 
 from crewai import Agent, Task, Crew
 from IPython.display import Markdown
 from openai import OpenAI
+from crewai import LLM
 
 # Configure logging
 logging.basicConfig(
@@ -21,10 +22,13 @@ def get_openai_api_key():
     return openai_api_key
 
 openai_api_key = get_openai_api_key()
-llm = os.getenv("OPENAI_MODEL_NAME")
 
-client = OpenAI(
-    api_key=openai_api_key,
+# Change the llm based on remote or local
+# client = OpenAI(api_key=openai_api_key)
+# llm = os.getenv("OPENAI_MODEL")
+llm = LLM(
+    model="ollama/mistral:7B", # change to your model
+    base_url="http://localhost:11434"
 )
 
 planner = Agent(
@@ -34,7 +38,7 @@ planner = Agent(
                 You collect information that helps the audience learn something \
                 and make informed decisions. Your work is the basis for the Blog Writer.",
     allow_delegation=False,
-	verbose=False,
+	verbose=True,
     llm = llm
 )
 
@@ -49,7 +53,7 @@ writer = Agent(
                 You also provide impartial insights and back them up with information \
                 provided by the Blog Planner.",
     allow_delegation=False,
-    verbose=False,
+    verbose=True,
     llm = llm
 )
 
@@ -62,7 +66,7 @@ editor = Agent(
                 provide balanced feedback to avoid bias, avoid controversies \
                 and make any necessary corrections.",
     allow_delegation=False,
-    verbose=False,
+    verbose=True,
     llm = llm
 )
 
@@ -88,7 +92,7 @@ write = Task(
         4. Ensure the post is structured with an engaging introduction, \
             insightful body, and a summarizing conclusion.\n \
         5. Simplify the content for easy reading and understanding \
-            for Tech & Teenager audience.\n \
+            for Teenager audience.\n \
         6. Proofread for grammatical errors\n"
     ),
     expected_output="A well-written blog post "
@@ -111,10 +115,12 @@ crew = Crew(
 )
 
 def main():
-    generate_blog_post("Machine Learning")
+    generate_blog_post("Agentic AI")
 
 def generate_blog_post(topic):
-    result = crew.kickoff(inputs={"topic": topic})
+    result = crew.kickoff(inputs={"topic": topic}, )
+    print(result)
+    print(Markdown(result["raw"]))
     return result
 
 if __name__ == "__main__":

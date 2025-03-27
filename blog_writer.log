@@ -69,3 +69,223 @@ LiteLLM completion() model= gpt-4o; provider = openai
 2025-03-25 14:53:14,628 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-03-25 14:53:14,631 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
 2025-03-25 14:53:14,646 - blog_writer - ERROR - Error in main execution: 'CrewOutput' object has no attribute 'split'
+2025-03-25 17:26:59,146 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-25 17:27:09,564 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 17:27:09,586 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-25 17:27:09,610 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-25 17:27:31,027 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 17:27:31,029 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-25 17:27:31,049 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-03-25 17:27:51,229 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 17:27:51,305 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 15:50:05,230 - root - ERROR - LiteLLM call failed: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=gemma3
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+2025-03-26 16:15:23,316 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 16:17:13,606 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 16:17:13,653 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 16:17:13,797 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:17:13,805 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:17:13,868 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 16:17:13,937 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:17:14,043 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:19:06,425 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 16:19:06,449 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 16:19:06,493 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 16:19:06,595 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:19:06,698 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:21:14,294 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 16:21:14,358 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 16:21:14,403 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 16:21:14,510 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:21:14,610 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:23:10,994 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 16:23:10,999 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 16:23:11,091 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:23:11,159 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:24:49,052 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 16:26:33,252 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 16:26:33,255 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 16:26:33,344 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:26:33,346 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:26:33,369 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 16:26:33,423 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:26:33,513 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:28:29,834 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 16:28:29,838 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 16:28:29,871 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 16:28:29,937 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:28:30,027 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:30:48,478 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 16:30:48,483 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 16:30:48,572 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 16:30:48,668 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:14:20,061 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:16:08,474 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:16:08,505 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:16:08,674 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:16:08,679 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:16:08,692 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:16:08,784 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:16:08,929 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:17:54,106 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:17:54,115 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:17:54,169 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:17:54,238 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:17:54,333 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:19:36,498 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:19:36,510 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:19:36,517 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:19:36,595 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:19:36,707 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:20:59,890 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:20:59,894 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:20:59,902 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:20:59,997 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:21:00,101 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:22:30,946 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:22:30,957 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:22:30,990 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:22:31,119 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:22:31,208 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:24:05,532 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:24:05,539 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:24:05,643 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:24:05,718 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:26:21,890 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:27:55,907 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:27:55,913 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:27:56,032 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:27:56,032 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:27:56,038 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:27:56,109 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:27:56,211 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:30:10,407 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:30:10,409 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:30:10,430 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:30:10,508 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:30:10,603 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:31:48,139 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:31:48,142 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:31:48,148 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:31:48,219 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:31:48,309 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:33:06,281 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:33:06,284 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:33:06,307 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:33:06,387 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:33:06,478 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:34:28,534 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:34:28,542 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:34:28,631 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:34:28,702 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:36:27,724 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:38:01,329 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:38:01,332 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:38:01,405 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:38:01,405 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:38:01,432 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:38:01,488 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:38:01,571 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:39:49,184 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:39:49,191 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:39:49,219 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:39:49,277 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:39:49,366 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:41:40,502 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:41:40,508 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:41:40,515 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:41:40,604 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:41:40,705 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:43:35,692 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:43:35,698 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:43:35,790 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:43:35,857 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:45:58,370 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:47:30,757 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:47:30,762 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:47:30,838 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:47:30,838 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:47:30,866 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:47:30,933 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:47:31,054 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:49:14,876 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:49:14,881 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:49:14,888 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:49:14,957 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:49:15,053 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:50:43,392 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:50:43,396 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:50:43,421 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:50:43,483 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:50:43,578 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:52:07,954 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:52:07,959 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:52:07,967 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:52:08,042 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:52:08,148 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:53:54,567 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:53:54,572 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:53:54,582 - LiteLLM - INFO - 
+LiteLLM completion() model= gemma3:1b; provider = ollama
+2025-03-26 17:53:54,662 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:53:54,757 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:55:38,609 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 17:55:38,614 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 17:55:38,697 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 17:55:38,764 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 18:52:27,809 - LiteLLM - INFO - 
+LiteLLM completion() model= mistral:7B; provider = ollama
+2025-03-26 18:56:47,710 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 18:56:47,771 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 18:56:47,812 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 18:56:47,813 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 18:56:47,868 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 18:56:47,881 - LiteLLM - INFO - 
+LiteLLM completion() model= mistral:7B; provider = ollama
+2025-03-26 18:56:47,883 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 19:02:48,649 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 19:02:48,673 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 19:02:48,684 - LiteLLM - INFO - 
+LiteLLM completion() model= mistral:7B; provider = ollama
+2025-03-26 19:02:48,704 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 19:02:48,720 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 19:06:01,195 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 19:06:01,210 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 19:06:01,239 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 19:06:01,282 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 19:06:01,295 - LiteLLM - INFO - 
+LiteLLM completion() model= mistral:7B; provider = ollama
+2025-03-26 19:13:25,292 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/generate "HTTP/1.1 200 OK"
+2025-03-26 19:13:25,309 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-03-26 19:13:25,344 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
+2025-03-26 19:13:25,375 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/show "HTTP/1.1 200 OK"
